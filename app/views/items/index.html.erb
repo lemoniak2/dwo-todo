@@ -4,7 +4,7 @@
   <tbody>
     <%- @items.each do |item| %>
       <tr>
-        <td><%= item.image %></td>
+        <td><%= image_tag item.image_url %></td>
         <td><%= item.title %></td>
         <td><%= item.description %></td>
         <td><%= item.rating %></td>

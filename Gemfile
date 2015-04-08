@@ -15,6 +15,7 @@ gem 'simple_form', '~> 3.1.0'
 gem 'slim-rails', '~> 3.0.1'
 
 # Utils
+gem 'carrierwave', '~> 0.10.0'
 gem 'decent_exposure', '~> 2.3.2'
 gem 'decent_decoration', '~> 0.0.6'
 gem 'factory_girl_rails', '~> 4.5.0'

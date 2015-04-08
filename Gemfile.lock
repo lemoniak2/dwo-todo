@@ -42,6 +42,11 @@ GEM
       erubis (>= 2.6.6)
       rack (>= 0.9.0)
     builder (3.2.2)
+    carrierwave (0.10.0)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      json (>= 1.7)
+      mime-types (>= 1.16)
     celluloid (0.16.0)
       timers (~> 4.0.0)
     coderay (1.1.0)
@@ -231,6 +236,7 @@ PLATFORMS
 
 DEPENDENCIES
   better_errors (~> 2.1)
+  carrierwave (~> 0.10.0)
   coffee-rails (~> 4.1.0)
   database_cleaner (~> 1.4.0)
   decent_decoration (~> 0.0.6)
