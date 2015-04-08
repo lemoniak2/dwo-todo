@@ -1,4 +1,5 @@
 class Item < ActiveRecord::Base
+  default_scope { order(rating: :desc) }
   mount_uploader :image, ImageUploader
 
   def vote_up!
