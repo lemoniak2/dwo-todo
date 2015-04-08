@@ -7,7 +7,6 @@ gem 'sass-rails', '~> 5.0'
 gem 'materialize-sass', '~> 0.96.1'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails', '~> 4.0.3'
-gem 'turbolinks', '~> 2.5.3'
 
 # Views
 gem 'draper', '~> 2.1.0'
