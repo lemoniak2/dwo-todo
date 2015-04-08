@@ -25,3 +25,12 @@ group :development, :test do
   gem 'quiet_assets', '~> 1.1'
   gem 'spring', '~> 1.2'
 end
+
+group :test do
+  gem 'database_cleaner', '~> 1.4.0'
+  gem 'fuubar', '~> 2.0.0'
+  gem 'rspec-its', '~> 1.2'
+  gem 'rspec-rails', '~> 3.2.0'
+  gem 'selleo-controller_tests', '~> 0.0.6'
+  gem 'shoulda-matchers', '~> 2.8.0', require: false
+end
