@@ -17,6 +17,7 @@ gem 'slim-rails', '~> 3.0.1'
 # Utils
 gem 'decent_exposure', '~> 2.3.2'
 gem 'decent_decoration', '~> 0.0.6'
+gem 'factory_girl_rails', '~> 4.5.0'
 
 group :development, :test do
   gem 'guard', '~> 2.12.5'
