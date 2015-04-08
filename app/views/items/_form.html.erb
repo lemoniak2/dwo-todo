@@ -1,8 +1,20 @@
 <%= form_for(@item) do |f| %>
   <div class='form-inputs'>
-    <%= f.text_field :title %>
-    <%= f.text_area :description %>
-    <%= f.file_field :image %>
+    <div class='input-field'>
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+    </div>
+    <div class='input-field'>
+      <%= f.label :description %>
+      <%= f.text_area :description, class: 'materialize-textarea' %>
+    </div>
+    <div class='file-field input-field'>
+      <%= text_field_tag '', '', class: 'file-path validate' %>
+      <div class='btn'>
+        <span>File</span>
+        <%= f.file_field :image %>
+      </div>
+    </div>
   </div>
 
   <div class='form-actions'>
