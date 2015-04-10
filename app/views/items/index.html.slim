@@ -1,0 +1,23 @@
+.row
+  - @items.each do |item|
+    .col.s6.offset-s3
+      .card
+        .card-image.waves-effect.waves-block.waves-light
+          = image_tag item.image_url, class: 'activator'
+        .card-content
+          span.card-title.activator.grey-text.text-darken-4
+            = item.title
+            i.mdi-navigation-more-vert.right
+          p
+            = item.rating
+            = link_to 'Vote UP', item_votes_path(item), method: :create
+            = link_to 'Vote DOWN', item_votes_path(item), method: :delete
+        .card-reveal
+          span.card-title.grey-text.text-darken-4
+            = item.title
+            i.mdi-navigation-close.right
+          p
+            = item.description
+          p
+            = link_to 'Edit', edit_item_path(item)
+            = link_to 'Destroy', item, data: {confirm: 'Are you sure?'}, method: :delete
