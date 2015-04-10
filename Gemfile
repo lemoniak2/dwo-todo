@@ -23,6 +23,7 @@ group :development, :test do
   gem 'guard', '~> 2.12.5'
   gem 'pry-rails', '~> 0.3.4'
   gem 'better_errors', '~> 2.1'
+  gem 'binding_of_caller', '~> 0.7.2'
   gem 'quiet_assets', '~> 1.1'
   gem 'spring', '~> 1.2'
 end
