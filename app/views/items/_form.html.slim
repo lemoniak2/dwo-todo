@@ -1,15 +1,13 @@
-= form_for(@item) do |f|
+= simple_form_for @item do |f|
   .form-inputs
     .input-field
-      = f.label :title
-      = f.text_field :title
+      = f.input :title
     .input-field
-      = f.label :description
-      = f.text_area :description, class: 'materialize-textarea'
+      = f.input :description, input_html: { class: 'materialize-textarea' }
     .file-field.input-field
       = text_field_tag '', '', class: 'file-path validate'
       .btn
         span File
-        = f.file_field :image
+        = f.input :image, label: false
   .form-actions
     = f.button :submit
