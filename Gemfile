@@ -21,6 +21,8 @@ gem 'factory_girl_rails', '~> 4.5.0'
 
 group :development, :test do
   gem 'guard', '~> 2.12.5'
+  gem 'guard-rspec', require: false
+  gem 'guard-rails', '~> 0.7.1'
   gem 'pry-rails', '~> 0.3.4'
   gem 'better_errors', '~> 2.1'
   gem 'binding_of_caller', '~> 0.7.2'
